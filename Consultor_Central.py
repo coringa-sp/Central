@@ -120,7 +120,7 @@ def Gerador_CC():
 	gerador_de_cc.geometry("300x200+200+200")
 	#########################
 	info = Label(gerador_de_cc, text=" - obs; Insira sua BIN abaixo!", font="Arial 10").pack(side=TOP)
-	bincc = Label(gerador_de_cc, text="BIN:", fg="white", bg="black").place(x=34, y=90)
+	bincc = Label(gerador_de_cc, text="BIN:", fg="white", bg="black").place(x=34, y=90) 
 	#########################
 	global entry_bincc
 	entry_bincc = Entry(gerador_de_cc)
@@ -155,7 +155,7 @@ def binchecker():
 			a.close()
 		f.close()
 
-	def check():
+def check():
 		os.system('cls')
 		biin = entrybin.get()
 
@@ -628,7 +628,7 @@ def testar():
 						main()
 					else:
 						tkMessageBox.showinfo("Info", "[!] Usuario ou Senha Invalidos, Tente Novamente! 2")
-				else:
+			else:
 					tkMessageBox.showinfo("Info", "[!] Usuario ou Senha Invalidos, Tente Novamente! 1")
 			else:
 				tkMessageBox.showwarning("Warn", "[!] Problema de Conexao, Tente Novamente!")
